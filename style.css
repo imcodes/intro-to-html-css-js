@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background:lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgba(1, 107, 72, 0.8);
+    background-image:url('workspace.jpg');
+    background-size:cover;
+    background-position: center bottom;
+    background-blend-mode: multiply;
+}
+
+.form-section{
+    /* padding:0.5rem; */
+    min-height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:0.5rem;
+    
+}
+.logo{
+    width:6.5rem;
+    border-radius: 50%;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    max-width: 1000px;
+    padding: 1.5rem;
+    gap:1rem;
+    background:rgba(200,200,200,.9);
+    border-radius: 10px ;
+
+}
+
+.login-div, .registration-div{
+    width:100%;
+    /* max-width:500px; */
+    border:1px solid rgb(4, 160, 150);
+    background:#eee;
+    padding:1.5rem;
+    margin-right:10px;
+    border-radius: 10px;
+}
+
+.form-title{
+    color:rgb(4, 160, 150);
+    padding:0px 0.5em;;
+    border-left: 0.2rem rgb(4, 160, 150) solid;
+    margin: 1rem 0px;
+}
+
+.input-group{
+    margin-bottom: 10px;
+}
+
+.input-label {
+    padding: 0.5rem 0px;
+    margin: 0.2rem 0px;
+    display: block;
+    font-weight:bold;
+}
+
+input.form-input{
+    border-radius:5px;
+    padding:1rem;
+    font-size:14px;
+    width:100%;
+    outline:none;
+    border:1px solid transparent;
+    box-shadow: 0px 0px 0px .5px #595;
+}
+input.form-input:hover{
+    border-color:green
+}
+
+.button{
+    padding: 1rem 1.5rem;
+    border:none;
+    border-radius: 5px;
+    background-color: rgb(10, 95, 75);
+    color:white;
+    text-transform: uppercase;
+}
+
+/* Utlity Styles */
+.d-block{
+    display:block
+}
+
+.hidden{
+    display: none;
+}
+
+
+
+/* Mobile screen breakpoint  for screen sizes below 720px width*/
+@media screen and (max-width:720px){
+    .login-div, .registration-div{
+        width:100%;
+    }
+
+    .container{
+        flex-direction: column;
+        gap:1.5rem
+    }
+    
+}
