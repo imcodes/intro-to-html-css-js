@@ -28,6 +28,7 @@ body{
     width:6.5rem;
     border-radius: 50%;
 }
+/* The filter clases only applly to img DOMs */
 .filter-green{
     filter: invert(42%) sepia(70%) saturate(434%) hue-rotate(83deg) brightness(106%) contrast(78%);
 }
