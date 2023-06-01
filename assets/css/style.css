@@ -28,6 +28,15 @@ body{
     width:6.5rem;
     border-radius: 50%;
 }
+.filter-green{
+    filter: invert(42%) sepia(70%) saturate(434%) hue-rotate(83deg) brightness(106%) contrast(78%);
+}
+.filter-blue{
+    filter: invert(12%) sepia(94%) saturate(2490%) hue-rotate(217deg) brightness(92%) contrast(103%);
+}
+.filter-gray{
+    filter: invert(51%) sepia(5%) saturate(14%) hue-rotate(334deg) brightness(93%) contrast(92%);
+}
 .container {
     display: flex;
     justify-content: center;
